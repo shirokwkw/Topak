@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Sayo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap');
+
+        :root {
+            --primary-color: #800000; /* Maroon */
+            --secondary-color: #550000; /* Darker Maroon for H1 */
+            --background-color: #f5f5dc; /* Nude/Beige */
+            --text-color: #333;
+            --font-fancy: 'Pacifico', cursive;
+            --font-body: 'Poppins', sans-serif;
+            --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--shadow-light);
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: var(--font-body); /* Changed to Poppins */
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            line-height: 1.2;
+            margin-bottom: 15px; /* Added space below header */
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .gif-container {
+            width: 100%;
+            max-width: 250px;
+            aspect-ratio: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+        }
+
+        .gif-container .tenor-gif-embed {
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .btn-container a,
+        .btn-container button {
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #fff;
+            background: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(128, 0, 0, 0.4);
+            cursor: pointer;
+        }
+        
+        .btn-container a:hover,
+        .btn-container button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(128, 0, 0, 0.6);
+        }
+        
+        .movable {
+            transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .btn-container {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .btn-container a,
+            .btn-container button {
+                font-size: 1rem;
+                padding: 15px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="start-page" class="page">
+            <div class="gif-container">
+                <div class="tenor-gif-embed" data-postid="17502452595142207696" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/quby-quby-sticker-quby-gif-pentol-pentol-stiker-gif-17502452595142207696">Quby Quby Sticker Sticker</a>from <a href="https://tenor.com/search/quby-stickers">Quby Stickers</a></div>
+            </div>
+            <h1>Hii, Topaak</h1>
+            <p>May gusto ako sabihin hihihi</p>
+            <div class="btn-container">
+                <a href="#" class="next-btn" data-target="what-page">Ano yun?</a>
+                <a href="#" class="movable" id="no1">Di ako interesado</a>
+            </div>
+        </div>
+
+        <div id="what-page" class="page hidden">
+            <div class="gif-container">
+                <div class="tenor-gif-embed" data-postid="17502452595142207696" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/quby-quby-sticker-quby-gif-pentol-pentol-stiker-gif-17502452595142207696">Quby Quby Sticker Sticker</a>from <a href="https://tenor.com/search/quby-stickers">Quby Stickers</a></div>
+            </div>
+            <h1>hmmm...</h1>
+            <p>Kaso nahihiya aq ihh</p>
+            <div class="btn-container">
+                <a href="#" class="next-btn" data-target="ask-page">Ano nga yun?</a>
+                <a href="#" class="movable" id="no2">Di ako interesado</a>
+            </div>
+        </div>
+
+        <div id="ask-page" class="page hidden">
+            <div class="gif-container">
+                <div class="tenor-gif-embed" data-postid="17502452595142207696" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/quby-quby-sticker-quby-gif-pentol-pentol-stiker-gif-17502452595142207696">Quby Quby Sticker Sticker</a>from <a href="https://tenor.com/search/quby-stickers">Quby Stickers</a></div>
+            </div>
+            <h1>hmmm...</h1>
+            <p>I want to ask you something…</p>
+            <div class="btn-container">
+                <a href="#" class="next-btn" data-target="askwhat-page">Ask what?</a>
+                <a href="#" class="movable" id="no3">Di ako interesado</a>
+            </div>
+        </div>
+
+        <div id="askwhat-page" class="page hidden">
+            <div class="gif-container">
+                <div class="tenor-gif-embed" data-postid="17502452595142207696" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/quby-quby-sticker-quby-gif-pentol-pentol-stiker-gif-17502452595142207696">Quby Quby Sticker Sticker</a>from <a href="https://tenor.com/search/quby-stickers">Quby Stickers</a></div>
+            </div>
+            <h1>hmmm...</h1>
+            <p>I want to formally ask for your permission to court you.</p>
+            <div class="btn-container">
+                <a href="#" class="next-btn" data-target="yes-page">Yes</a>
+                <a href="#" class="next-btn" data-target="no-page">No. Sorry.</a>
+            </div>
+        </div>
+
+        <div id="yes-page" class="page hidden">
+            <div class="gif-container">
+                <div class="tenor-gif-embed" data-postid="2295373447798070490" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/dudu-day-gif-2295373447798070490">Dudu Day Sticker</a>from <a href="https://tenor.com/search/dudu+day-stickers">Dudu Day Stickers</a></div>
+            </div>
+            <h1>Yeyyy</h1>
+            <p>i love youu hihih</p>
+            <div class="btn-container">
+                <a href="#" class="next-btn" data-target="start-page">Back to Start</a>
+            </div>
+        </div>
+
+        <div id="no-page" class="page hidden">
+            <div class="gif-container">
+                <div class="tenor-gif-embed" data-postid="10704312894451489263" data-share-method="host" data-aspect-ratio="1.25962" data-width="100%"><a href="https://tenor.com/view/crying-gif-10704312894451489263">Crying Sticker</a>from <a href="https://tenor.com/search/crying-stickers">Crying Stickers</a></div>
+            </div>
+            <h1>That’s okay.</h1>
+            <p>I respect your decision. </p>
+            <div class="btn-container">
+                <a href="#" class="next-btn" data-target="start-page">Back to Start</a>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const container = document.querySelector('.container');
+            const pages = document.querySelectorAll('.page');
+            const nextButtons = document.querySelectorAll('.next-btn');
+            const noButtons = document.querySelectorAll('.movable');
+
+            function showPage(targetId) {
+                pages.forEach(page => {
+                    page.classList.add('hidden');
+                });
+                document.getElementById(targetId).classList.remove('hidden');
+                
+                noButtons.forEach(noButton => {
+                    noButton.style.position = '';
+                    noButton.style.left = '';
+                    noButton.style.top = '';
+                });
+            }
+
+            nextButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetPage = this.getAttribute('data-target');
+                    showPage(targetPage);
+                });
+            });
+
+            noButtons.forEach(noButton => {
+                noButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const containerRect = container.getBoundingClientRect();
+                    const buttonRect = noButton.getBoundingClientRect();
+
+                    const maxX = containerRect.width - buttonRect.width - 20; 
+                    const maxY = containerRect.height - buttonRect.height - 20; 
+
+                    let randomX = Math.random() * maxX;
+                    let randomY = Math.random() * maxY;
+
+                    randomX = Math.max(10, Math.min(randomX, containerRect.width - buttonRect.width - 10));
+                    randomY = Math.max(10, Math.min(randomY, containerRect.height - buttonRect.height - 10));
+
+                    noButton.style.position = 'absolute';
+                    noButton.style.left = `${randomX}px`;
+                    noButton.style.top = `${randomY}px`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
